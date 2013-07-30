@@ -1,2 +1,2 @@
-spring-restTemplate-ucloudAPI-
+spring-restTemplate-ucloudAPI
 ==============================
