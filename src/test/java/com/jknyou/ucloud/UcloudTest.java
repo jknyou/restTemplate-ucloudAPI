@@ -23,8 +23,8 @@ import org.springframework.web.client.RestTemplate;
 public class UcloudTest {
 	@Inject private RestTemplate restTemplate;
 	
-	private static final String API_KEY = "apiKey=jlhr1am7QgJjECqhsyDrrwmLeP9IA_LSlHaDZWqqgncoFrzu0goKupviFTM1xNwIRTvJR6nphtcJh_SOUBKtXg";
-	private static final String SECRET_KEY = "WbyrssRwkNvgIKFw_VX_pv4lyWG1Fx7FVqg8Fm1ShAKXPmAml3jDdm1eqtBEMLqPjh9dPTTIbcDE2k0yYEwTpA";
+	private static final String API_KEY = "apiKey=yourkey";
+	private static final String SECRET_KEY = "yourkey";
 	private static final String API_URL = "https://api.ucloudbiz.olleh.com/server/v1/client/api?";
 	private static final String RES_TYPE = "response=json";
 	
