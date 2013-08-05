@@ -11,8 +11,8 @@ import org.apache.commons.codec.binary.Base64;
 import org.springframework.web.client.RestTemplate;
 
 public abstract class AbstractUcloudApiService{
-	private static final String API_KEY = "apiKey=jlhr1am7QgJjECqhsyDrrwmLeP9IA_LSlHaDZWqqgncoFrzu0goKupviFTM1xNwIRTvJR6nphtcJh_SOUBKtXg";
-	private static final String SECRET_KEY = "WbyrssRwkNvgIKFw_VX_pv4lyWG1Fx7FVqg8Fm1ShAKXPmAml3jDdm1eqtBEMLqPjh9dPTTIbcDE2k0yYEwTpA";
+	private static final String API_KEY = "apiKey=yourKey";
+	private static final String SECRET_KEY = "yourKey";
 	private static final String RES_TYPE = "response=json";
 	
 	@Inject private RestTemplate restTemplate;
