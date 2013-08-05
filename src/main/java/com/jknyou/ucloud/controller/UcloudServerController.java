@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.jknyou.ucloud.service.UcloudService;
+import com.jknyou.ucloud.service.UcloudServerService;
 
 @Controller
-public class HomeController {
-	@Inject private UcloudService ucloudService;
+public class UcloudServerController {
+	@Inject private UcloudServerService ucloudServerService;
 	
 	@RequestMapping(value ={"/", "/home"}, method = RequestMethod.GET)
 	public String home(ModelMap map) {
@@ -24,25 +24,31 @@ public class HomeController {
 	
 	@RequestMapping(value ="send", method = RequestMethod.POST)
 	public void createServer(@RequestBody List<String> paramList, ModelMap map) {
-		map.put("data", ucloudService.sendRequest(paramList));
+		map.put("data", ucloudServerService.sendRequest(paramList));
 	}
 	
-	@RequestMapping(value ="server", method = RequestMethod.GET)
+	@RequestMapping(value ="servers", method = RequestMethod.GET)
 	public void getServerList(ModelMap map) {
 		List<String> paramList = makeParam("command=listVirtualMachines");
-		map.put("data", ucloudService.sendRequest(paramList));
+		map.put("data", ucloudServerService.sendRequest(paramList));
 	}
 	
-	@RequestMapping(value ="ip", method = RequestMethod.GET)
+	@RequestMapping(value ="ips", method = RequestMethod.GET)
 	public void getIpList(ModelMap map) {
 		List<String> paramList = makeParam("command=listPublicIpAddresses");
-		map.put("data", ucloudService.sendRequest(paramList));
+		map.put("data", ucloudServerService.sendRequest(paramList));
 	}
 	
-	@RequestMapping(value ="product", method = RequestMethod.GET)
+//	@RequestMapping(value ="serviceoffering", method = RequestMethod.GET)
+//	public void getServiceofferingList(ModelMap map) {
+//		List<String> paramList = makeParam("command=listAvailableProductTypes");
+//		map.put("data", ucloudService.sendRequest(paramList));
+//	}
+	
+	@RequestMapping(value ="products", method = RequestMethod.GET)
 	public void getProductList(ModelMap map) {
 		List<String> paramList = makeParam("command=listAvailableProductTypes");
-		map.put("data", ucloudService.sendRequest(paramList));
+		map.put("data", ucloudServerService.sendRequest(paramList));
 	}
 	
 	private List<String> makeParam(String param) {

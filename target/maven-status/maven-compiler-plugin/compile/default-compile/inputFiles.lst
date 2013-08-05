@@ -1,3 +1,7 @@
-/Users/sil-010/Documents/workspace-sts/uclou-api-test/src/main/java/com/jknyou/ucloud/service/UcloudService.java
-/Users/sil-010/Documents/workspace-sts/uclou-api-test/src/main/java/com/jknyou/ucloud/service/impl/UcloudServiceImpl.java
-/Users/sil-010/Documents/workspace-sts/uclou-api-test/src/main/java/com/jknyou/ucloud/controller/HomeController.java
+/Users/sil-010/Documents/workspace-sts/uclou-api-test/src/main/java/com/jknyou/ucloud/controller/UcloudServerController.java
+/Users/sil-010/Documents/workspace-sts/uclou-api-test/src/main/java/com/jknyou/ucloud/service/UcloudServerService.java
+/Users/sil-010/Documents/workspace-sts/uclou-api-test/src/main/java/com/jknyou/ucloud/service/UcloudDbService.java
+/Users/sil-010/Documents/workspace-sts/uclou-api-test/src/main/java/com/jknyou/ucloud/service/impl/UcloudDbServiceImpl.java
+/Users/sil-010/Documents/workspace-sts/uclou-api-test/src/main/java/com/jknyou/ucloud/service/impl/UcloudServerServiceImpl.java
+/Users/sil-010/Documents/workspace-sts/uclou-api-test/src/main/java/com/jknyou/ucloud/service/impl/AbstractUcloudApiService.java
+/Users/sil-010/Documents/workspace-sts/uclou-api-test/src/main/java/com/jknyou/ucloud/controller/UcloudDbController.java

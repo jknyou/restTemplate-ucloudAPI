@@ -155,7 +155,7 @@
 				var addFlag = false;
 				
 				var getServerList = function(){
-					$.getJSON('server', function(json){
+					$.getJSON('servers', function(json){
 						var data = JSON.parse(json.data);
 						var page = '';
 						page += '<table class="table table-striped">';
@@ -189,7 +189,7 @@
 				});
 				
 				$('#ipListBt').click(function(){
-					$.getJSON('ip', function(json){
+					$.getJSON('ips', function(json){
 						var data = JSON.parse(json.data);
 						var page = '';
 						page += '<table class="table table-striped">';
@@ -215,7 +215,7 @@
 				});
 				
 				$('#pdListBt').click(function(){
-					$.getJSON('product', function(json){
+					$.getJSON('products', function(json){
 						var data = JSON.parse(json.data);
 						var page = '';
 						page += '<table class="table table-striped">';
